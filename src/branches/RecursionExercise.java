@@ -8,8 +8,6 @@ public class RecursionExercise {
 
         CountNextBranches countNextBranches = new CountNextBranches();
 
-        Branch branch = new Branch(new ArrayList<>());
-        Branch branchKS = new Branch(new ArrayList<>());
         Branch branchDH = new Branch(new ArrayList<>());
         Branch branchDK = new Branch(new ArrayList<>());
         Branch branchGM = new Branch(new ArrayList<>());
@@ -21,18 +19,17 @@ public class RecursionExercise {
         Branch branchAB = new Branch(new ArrayList<>());
         Branch branchA = new Branch(new ArrayList<>());
 
-        branchDK.getBranches().add(branchKS);
         branchFD.getBranches().add(branchDK);
         branchFD.getBranches().add(branchDH);
         branchFG.getBranches().add(branchGM);
         branchAF.getBranches().add(branchFG);
         branchAF.getBranches().add(branchFD);
         branchAF.getBranches().add(branchFE);
+        branchAB.getBranches().add(branchBC);
         branchA.getBranches().add(branchAB);
         branchA.getBranches().add(branchAF);
-        branch.getBranches().add(branchA);
 
 
-        System.out.println("This structure depth is: " + countNextBranches.countNextBranches(branch) + " levels.");
+        System.out.println("This structure depth is: " + countNextBranches.countNextBranches(branchA) + " levels.");
     }
 }
