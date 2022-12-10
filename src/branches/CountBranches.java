@@ -1,6 +1,6 @@
 package branches;
 
-public class CountNextBranches {
+public class CountBranches {
     public int countNextBranches(Branch branch) {
         if (branch.getBranches() != null) {
             int levelCount = 1;

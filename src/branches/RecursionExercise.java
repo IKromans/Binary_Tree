@@ -6,7 +6,7 @@ public class RecursionExercise {
 
     public static void main(String[] args) {
 
-        CountNextBranches countNextBranches = new CountNextBranches();
+        CountBranches countBranches = new CountBranches();
 
         Branch branchDH = new Branch(new ArrayList<>());
         Branch branchDK = new Branch(new ArrayList<>());
@@ -30,6 +30,6 @@ public class RecursionExercise {
         branchA.getBranches().add(branchAF);
 
 
-        System.out.println("This structure depth is: " + countNextBranches.countNextBranches(branchA) + " levels.");
+        System.out.println("This structure depth is: " + countBranches.countNextBranches(branchA) + " levels.");
     }
 }
