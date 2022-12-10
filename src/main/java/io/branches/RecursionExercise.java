@@ -1,4 +1,4 @@
-package branches;
+package io.branches;
 
 import java.util.ArrayList;
 
@@ -8,6 +8,7 @@ public class RecursionExercise {
 
         CountBranches countBranches = new CountBranches();
 
+        Branch branchKS = new Branch(new ArrayList<>());
         Branch branchDH = new Branch(new ArrayList<>());
         Branch branchDK = new Branch(new ArrayList<>());
         Branch branchGM = new Branch(new ArrayList<>());
@@ -19,6 +20,7 @@ public class RecursionExercise {
         Branch branchAB = new Branch(new ArrayList<>());
         Branch branchA = new Branch(new ArrayList<>());
 
+        branchDK.getBranches().add(branchKS);
         branchFD.getBranches().add(branchDK);
         branchFD.getBranches().add(branchDH);
         branchFG.getBranches().add(branchGM);

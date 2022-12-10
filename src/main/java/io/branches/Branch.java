@@ -1,4 +1,4 @@
-package branches;
+package io.branches;
 
 import java.util.List;
 
