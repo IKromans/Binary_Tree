@@ -2,13 +2,13 @@
 
 Hey! Welcome to my application that can determine levels of hierarchical structure.
 
-Code is in Java 18.0.2.
+Code is in Java 18.0.2, Maven 4.0.0 as a build tool and JUnit 4.13.2 for tests..
 
 To run application:
 
 > clone this repository `https://github.com/IKromans/Binary_Tree.git`
 
-> run
+> run it from tour favourite IDE.
 
 > the application will run and display text with structure levels counted. For this structure answer will be:
 
